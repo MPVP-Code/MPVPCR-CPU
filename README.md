@@ -18,6 +18,19 @@ yarn install
 
 This command installs all required dependencies. These dependecies are stored in the `package.json` file. They are used to setup the Git pre-commit hook that formats `.dgm` files before each commit.
 
+## Git workflow
+
+When starting to work on a particular task, move the task in **Board** from the **Open** to **Doing**. Then there is a need to make sure that the local `master` branch is most up to date. To check this make sure that you are using the `master` branch. Before performing any checkout make sure that ISSIE is closed to prevent some conflicts that could be caused by ISSIE's autosaving feature. To checkout, the `master` open Git bash in the project folder and enter `git checkout master`. After checking out `master` download the latest version from the origin using `git pull`. The next step is to create a new branch satisfying the naming convention described in [Branch naming](#branch-naming). Then implement the task as described in the task assignment. When committing new changes make sure that you follow the commit message convention described in [Commit message](#commit-message). After finishing the task, there is a need to push your changes to the origin. This can be done using the command `git push --set-upstream origin [name of the branch]`. The next step is to merge your changes to the `master` on GitLab. To merge the new branch into the `master` create a new merge request in **Merge request** section by clicking on the button **Create merge request** in the notification message with your branch name. Assign the merge request to yourself, and if there are no conflicts, you will be able to merge your branch into the `master`. Wait until the **Merge** button turns to green and merge your changes to `master`.
+
+### Merge-conflicts
+
+It may happen that someone else has already pushed some changes to `master` after you have created your branch and maybe they changed the same file as you did. This causes a conflict that will prevent you from merging your branch into `master`. To prevent data loss there is a need to accept changes from another person and once again apply your changes because you know what you have changed. You will have to merge `master` from `origin` to your local branch and apply your changes. Before merging make sure that there are no unversioned changes on your current local branch. If there are, remove them or commit them. Then enter the following commands to the Git bash:
+
+- `git checkout master` - checks out the local `master` branch
+- `git pull` - pulls the latest version from the origin to master
+- `git checkout [your-feature-branch-that-you-want-to-merge]` - checkout your local feature branch
+- `git merge --strategy-option theirs master` - merges up to date changes from master. This means that your conflicting changes will be overwritten with changes from `master`. Now you have to implement your changes to the conflicting files once again and make sure that your newly implemented functionality works. Then commit new changes and push them to origin. In case there were no changes in master you should be able to merge your merge request.
+
 ## Git pre-commit hook
 
 Git pre-commit hook was setup using the [husky](https://github.com/typicode/husky) library with [lint-staged](https://github.com/okonet/lint-staged) and the [Prettier](https://prettier.io/). The Prettier is configured to format `.dgm` files as pure `JSON` files. Only the files that are in the root directory of the project are formatted. `.dgm` files in the `backup` directory are not formatted.
