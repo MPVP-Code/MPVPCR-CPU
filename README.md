@@ -24,7 +24,37 @@ Git pre-commit hook was setup using the [husky](https://github.com/typicode/husk
 
 There is a known issue that prevents from pre-commit hook to run. This issue occurs when some files are staged and then changed on the file system once again without adding them to the stage. This causes the `lint-staged` library to run into problems because it takes files into the stage back on the file system which causes a conflict with edited files. Therefore before committing there is a need to always stage all `.dgm` files.
 
+## Git conventions
+
+### Commit message
+
+Commit messages should follow [Convetional commits](www.conventionalcommits.org) specification:
+
+```
+<type>[optional scope]: <description> #<task-id>
+```
+
+Example:
+
+```
+feat(fpu): implement the add operation #3
+```
+
+### Branch naming
+
+Branche names should follow the following namimg convetion:
+
+```
+{task-id}-{short-task-description}
+```
+
+Example:
+
+```
+3-prettier
+```
+
 ## Authors
-- Michal Palič
-- Chenghong Ren
-- Václav Pavlíček
+- Michal Palič ([michal.palic20@imperial.ac.uk](mailto:michal.palic20@imperial.ac.uk))
+- Chenghong Ren ([chenghong.ren20@imperial.ac.uk](mailto:chenghong.ren20@imperial.ac.uk))
+- Václav Pavlíček ([vaclav.pavlicek20@imperial.ac.uk](mailto:vaclav.pavlicek20@imperial.ac.uk))
