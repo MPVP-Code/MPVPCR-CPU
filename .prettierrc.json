@@ -1,0 +1,10 @@
+{
+  "overrides": [
+    {
+      "files": "*.dgm",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
