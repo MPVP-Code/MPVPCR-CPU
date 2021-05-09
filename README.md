@@ -41,7 +41,7 @@ There is a known issue that prevents from pre-commit hook to run. This issue occ
 
 ### Commit message
 
-Commit messages should follow [Convetional commits](www.conventionalcommits.org) specification:
+Commit messages should follow [Convetional commits](https://www.conventionalcommits.org) specification:
 
 ```
 <type>[optional scope]: <description> #<task-id>
