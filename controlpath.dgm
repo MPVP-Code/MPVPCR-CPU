@@ -82,7 +82,7 @@
                 "1": "50817",
                 "2": "52001",
                 "3": "33792",
-                "4": "38912",
+                "4": "38913",
                 "5": "28672",
                 "6": "0",
                 "7": "0",
@@ -4282,7 +4282,7 @@
       "ClkWidth": 1,
       "Cursor": 0,
       "Radix": "Hex",
-      "LastClk": 9,
+      "LastClk": 20,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4300,6 +4300,6 @@
         "IR2_OPCODE : datapath.I1.IR2_OPCODE[2:0]"
       ]
     },
-    "2021-05-25T14:20:32.383+01:00"
+    "2021-05-25T14:25:21.523+01:00"
   ]
 }
