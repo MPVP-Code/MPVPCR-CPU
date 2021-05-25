@@ -67,7 +67,31 @@ Example:
 3-prettier
 ```
 
+## CPU documentation
+
+### Instruction set
+
+| Instruction     | Op code |
+| --------------- | ------- |
+| Load/Store      | 0000    |
+| FPU             | 0001    |
+| JLO             | 0010    |
+| JLS             | 0011    |
+| JMP N           | 0100    |
+| JMI N           | 0101    |
+| JEQ N           | 0110    |
+| STP             | 0111    |
+| Data processing | 1000    |
+| Data processing | 1001    |
+| Data processing | 1010    |
+| Data processing | 1011    |
+| Data processing | 1100    |
+| Data processing | 1101    |
+| Data processing | 1110    |
+| Data processing | 1111    |
+
 ## Authors
+
 - Michal Palič ([michal.palic20@imperial.ac.uk](mailto:michal.palic20@imperial.ac.uk))
 - Chenghong Ren ([chenghong.ren20@imperial.ac.uk](mailto:chenghong.ren20@imperial.ac.uk))
 - Václav Pavlíček ([vaclav.pavlicek20@imperial.ac.uk](mailto:vaclav.pavlicek20@imperial.ac.uk))
