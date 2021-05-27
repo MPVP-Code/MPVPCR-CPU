@@ -90,6 +90,36 @@ Example:
 | Data processing | 1110    |
 | Data processing | 1111    |
 
+### Data processing instructions
+
+![Data processing instructions](images/data-processing-instruction.png)
+
+### LoadStore instructions
+
+![LoadStore instructions](images/load-store-instruction.png)
+
+### FPU instruction
+
+| Opcode \[4 bits\] | D \[2 bits\] | Operation \[2 bits\] | 6 bits remaining | M \[2 bits\] |
+| ----------------- | ------------ | -------------------- | ---------------- | ------------ |
+
+- Opcode \[4 bits\] = 0001
+- D \[2 bits\] = address of the destination register
+- Operation \[2 bits\] = used for selecting the operation
+  - 0b00 - Addition
+  - 0b01 - Subtraction
+  - 0b10 - Multiplication
+- 6 bits remaining - will be needed for the 32 bit operations and rounding method selection
+- M \[2 bits\] = address of the second operand register
+
+### MOVS instruction
+
+The MOVS instruction is used to perform 32 bit operations using the OP2 block. The example program that uses the MOVS instruction can be seen in the following figure. The program firstly uses immediate instructions that use values to the registers. Then it uses newly developed MOVS instruction to perform multi-word LSR shifts. Firstly, MOVS instruction is called on the value of the R2 register which is considered as a upper-word for the SHIFT. Then the instruction MOV with bit S=0 is called. This instruction uses the output of the flip flops that are in each shift block. These flip flops store values that would be otherwise discarted by the previous operation.
+
+![MOVS instruction sample program](images/movs-sample-program.png)
+
+![MOVS instruction sample program testing](images/movs-sample-program-testing.png)
+
 ## Authors
 
 - Michal Palič ([michal.palic20@imperial.ac.uk](mailto:michal.palic20@imperial.ac.uk))
