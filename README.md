@@ -90,6 +90,18 @@ Example:
 | Data processing | 1110    |
 | Data processing | 1111    |
 
+### JLO and JLS
+
+These two instructions were implemented as a part of the challenge. The `JLS` instruction replaces combination of `JMI` and `JEQ` from the old MU0-ARM CPU. The instructions are described by the following table:
+
+| Instruction | Opcode | Condition      | Meaning          |
+| ----------- | ------ | -------------- | ---------------- |
+| JLO         | 0010   | C = 0          | Jump if Rd < Rm  |
+| JLS         | 0011   | C = 0 or Z = 1 | Jump if Rd <= Rm |
+
+- `C` - carry from the previous ALU operation
+- `Z` - result of the previous ALU operations was 0
+
 ### Data processing instructions
 
 ![Data processing instructions](images/data-processing-instruction.png)
