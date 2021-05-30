@@ -1529,7 +1529,7 @@
               "Data": {
                 "0": "15944",
                 "1": "12629",
-                "2": "0",
+                "2": "4369",
                 "3": "8260",
                 "4": "0",
                 "5": "0",
@@ -1990,6 +1990,24 @@
           "Y": 917,
           "H": 30,
           "W": 60
+        },
+        {
+          "Id": "cff13958-21af-4dc2-ad0f-7881e22079e4",
+          "Type": { "Viewer": 12 },
+          "Label": "RAM_ADDR",
+          "InputPorts": [
+            {
+              "Id": "c0a1132b-3756-411f-8900-908156ed179b",
+              "PortNumber": 0,
+              "PortType": "Input",
+              "HostId": "cff13958-21af-4dc2-ad0f-7881e22079e4"
+            }
+          ],
+          "OutputPorts": [],
+          "X": 1796,
+          "Y": 90,
+          "H": 30,
+          "W": 30
         },
         {
           "Id": "d3fca827-9281-df6a-2b9a-1c863ff483b5",
@@ -2463,6 +2481,31 @@
             [2060, 605.2499999999999],
             [2060, 605.2499999999999],
             [2080, 605.2499999999999]
+          ]
+        },
+        {
+          "Id": "1de8d383-93c0-43e3-a278-bad1c7817a8a",
+          "Source": {
+            "Id": "c006cf95-3dcd-93d4-b9ef-e8df3e9b8a0e",
+            "PortNumber": null,
+            "PortType": "Output",
+            "HostId": "be6040ae-d60b-3753-fab2-9910b3f393d9"
+          },
+          "Target": {
+            "Id": "c0a1132b-3756-411f-8900-908156ed179b",
+            "PortNumber": null,
+            "PortType": "Input",
+            "HostId": "cff13958-21af-4dc2-ad0f-7881e22079e4"
+          },
+          "Vertices": [
+            [1716, 168],
+            [1736, 168],
+            [1736, 168],
+            [1756.0555555555557, 168],
+            [1756.0555555555557, 105],
+            [1776.1111111111113, 105],
+            [1776.1111111111113, 105],
+            [1796.1111111111113, 105]
           ]
         },
         {
@@ -4044,9 +4087,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 41,
+      "Cursor": 10,
       "Radix": "Hex",
-      "LastClk": 64,
+      "LastClk": 42,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4060,35 +4103,14 @@
         "IR1_VALID : irblock.I1.IR1_VALID",
         "IR2_VALID : irblock.I1.IR2_VALID",
         "STALL : irblock.I1.STALL",
-        "RAM_HAZARD",
-        "REG_HAZARD",
-        "RAM_HAZARD_PREV_CYCLE",
-        "REG_HAZARD_PREV_CYCLE",
-        "RAM_ADDR : datapath.I1.RAMADDRMUX[11:0]",
-        "IGNORE_HAZARD_DETECTOR",
-        "STALL_IN_PREV",
-        "RAM_HAZARD_PREV_CYCLE_IR1",
-        "REG_HAZARD_IR1",
-        "STALL_IN_PREV_CYCLE",
-        "DATA_DEPENDENCY",
-        "DATA_PROCESS_WB",
-        "IR1_IS_STORE",
-        "IS_FPU_HAZARD",
         "IR1 : irblock.I1.IR1[15:0]",
         "IR2 : irblock.I1.IR2[15:0]",
-        "HAZ_DECTECTOR_A",
-        "HAZ_DETECTOR_B",
-        "STALL_OUT",
-        "STALL_1",
-        "STALL_2",
-        "IR1_VALID_1",
-        "IR1_VALID_2",
-        "IR1_VALID_3",
-        "FPU_A",
-        "FPU_B",
-        "FPU_MULTIPLIER_OUT"
+        "WEN3",
+        "AD3",
+        "DIN3",
+        "RAM_ADDR : datapath.I1.RAMADDRMUX[11:0]"
       ]
     },
-    "2021-05-30T11:48:49.556+01:00"
+    "2021-05-30T12:25:15.951+01:00"
   ]
 }
