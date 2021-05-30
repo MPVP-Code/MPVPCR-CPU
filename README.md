@@ -132,6 +132,33 @@ The MOVS instruction is used to perform 32 bit operations using the OP2 block. T
 
 ![MOVS instruction sample program testing](images/movs-sample-program-testing.png)
 
+### Pipelining
+
+Pipelining on the Harvard architecture - advantage - it is easier to pipeline the CPU because in every cycle the instruction can be fetched.
+Pipelining is implemented by having 2 registers that store instruction that should be executed in the EXEC1 cycle - IR1 and instruction that should be executed in the EXEC2 cycle - IR2. Because there is a need to insert stalls between instructions to pipeline, two output flags IR1_VALID and IR2_VALID were added to show which of the two instructions is valid. The IRBlock has to be able to detect following hazards:
+
+- control hazards - occur when any jump instruction is fetched
+- structural hazards - occur when two instructions try to access the same hardware at the same time
+- data dependency hazards - occur when the result of the instruction IR2 needs to be used by IR1
+  .
+
+#### Hazard detection logic
+
+Whole hazard detection logic was implementing by having combinational circuit hazard detector. This block does not store any state and by decoding given instructions, determines whether any hazard might occur. It has 4 outputs - `REG_HAZARD`, `RAM_HAZARD`, `CONTROL_HAZARD` and `STALL`. The `STALL` output from the hazard detector always does not determine whether the stall cycle should be inserted or not because in the case the store occurred in the previous cycle, both IR1 and IR2 will be the same and therefore the pipeline would be stalled forever. To overcome this problem, state circuits were added to the IRBlock that help to determine if the pipeline should be stalled. The output of the hazard detector is anded with the INITIAL_FETCH_OCCURRED wire label to ensure, that the CPU will not be stalled in the first clock cycle. The second and gate to which the STALL output is connected is to prevent stalling the instruction forever because of the control hazard that occurred in the previous cycle. The third and gate with input `NOT(STALL_IN_PREV_CYCLE . RAM_HAZARD_PREV_CYCLE)` is connected to the output of the hazard detector to make sure that the pipeline is not stalled forever because of the RAM hazard that occurred in the previous cycle. The fourth AND gate is inserted to make sure that 3 stall cycles are not inserted to the pipeline. The `MUX4` was added for the case when both register and RAM hazards occur during one cycle. In this case, the output of the hazard detector is ignored. If both RAM and register hazards occurred during the same cycle, firstly the stall for the register cycle will be inserted and the stall for the RAM hazard. Last AND gate was added to make sure that the CPU will not be stalled when the stop instruction was loaded.
+
+#### Validity of instructions
+
+During the design proccess, it was observed that the stall cycle will not ever be inserted between the E1 and E2. The logic for `IR1_VALID` was determined the way described in the following text. The instruction 1 will be valid if following logic gates produce 1.
+
+- G17 - the STALL was not inserted in the previous valid or if RAM hazard did not occur in the previous cycle. In the following picture the IR1 is not valid in the cycle 2 because of the situation that occurred before the instruction that is handled by this logic gate.
+- G34 - RAM hazard did not occur in the cycle that was before the previous cycle and the hazard detector was not ignored and both STALL due to RAM and register hazards were inserted into the pipeline. Example in which this gate makes output 0 instead of 1 is in the following picture. The IR1 is not valid in the cycle 6.
+- G21 - the IR1 is not valid if the register hazard was detected by the hazard detector. In the following picture, IR1 is not valid because of this condition in the cycle 10.
+- G20 - the IR1 is valid when if the register hazard was detected in the previous cycle. In the following picture, IR1 is valid because of this condition in the cycle 11.
+- G27 - the IR1 is valid when the stop instruction was decoded.
+- G3 - the IR1 is not valid if the initial fetch did not occur.
+
+![Validity of instructions](images/validity-of-instructions.png)
+
 ## Authors
 
 - Michal Palič ([michal.palic20@imperial.ac.uk](mailto:michal.palic20@imperial.ac.uk))

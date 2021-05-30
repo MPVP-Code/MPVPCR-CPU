@@ -4087,9 +4087,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 0,
+      "Cursor": 2,
       "Radix": "Hex",
-      "LastClk": 42,
+      "LastClk": 53,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4118,9 +4118,11 @@
         "JEQ : irblock.I1.JEQ_1",
         "JMI : irblock.I1.JMI_1",
         "MI : datapath.I1.MI",
-        "JLS : irblock.I1.JLS_1"
+        "JLS : irblock.I1.JLS_1",
+        "MUX_0",
+        "STALL_DETECTOR_FETCH"
       ]
     },
-    "2021-05-30T14:53:59.579+01:00"
+    "2021-05-30T20:32:46.419+01:00"
   ]
 }
