@@ -142,7 +142,7 @@ Pipelining on the Harvard architecture - advantage - it is easier to pipeline th
 
 #### Hazard detection logic
 
-Whole hazard detection logic was implementing by having combinational circuit hazard detector. This block does not store any state and by decoding given instructions, determines whether any hazard might occur. It has 1 outputs - `STALL`. This `STALL` output from the hazard detector always does not determine whether the stall cycle should be inserted or not because in the case the stall occurred in the previous cycle, both IR1 and IR2 will be the same and therefore the pipeline would be stalled forever. To overcome this problem, state circuits were added to the IRBlock that help to determine if the pipeline should be stalled. The output of the hazard detector is anded with the `IR2_valid` to check if both instructions that are inputted to the hazard detector are valid. The `IR1_valid` is not used to determine the `STALL` output because it is a function of STALL -> if STALL occurred, then `IR1_VALID` will be low. Then the output of the hazard detector is anded with `INITIAL_FETCH_OCCURRED` wire label to ensure, that the CPU will not be stalled in the first clock cycle. The third and gate to which the STALL output is connected is to prevent stalling the instruction forever because there cannot be two stalls following each other (idea: isn't this solved by IR2_VALID?). The last and gate prevents the `STALL` output to be high when the `STP` instruction was decoded.
+Whole hazard detection logic was implementing by having combinational circuit hazard detector. This block does not store any state and by decoding given instructions, determines whether any hazard might occur. It has 1 outputs - `STALL`. This `STALL` output from the hazard detector always does not determine whether the stall cycle should be inserted or not because in the case the stall occurred in the previous cycle, both IR1 and IR2 will be the same and therefore the pipeline would be stalled forever. To overcome this problem, state circuits were added to the IRBlock that help to determine if the pipeline should be stalled. The output of the hazard detector is anded with the `IR2_valid` to check if both instructions that are inputted to the hazard detector are valid. The `IR1_valid` is not used to determine the `STALL` output because it is a function of STALL -> if STALL occurred, then `IR1_VALID` will be low. Then the output of the hazard detector is anded with `INITIAL_FETCH_OCCURRED` wire label to ensure, that the CPU will not be stalled in the first clock cycle. The third and gate to which the STALL output is connected is to prevent stalling the instruction forever because there cannot be two stalls following each other (idea: isn't this solved by `not(IR2_VALID)`? - no because in the cycle 1 the `not(IR2_VALID)` is high; however, the `STALL` could not happen). The last and gate prevents the `STALL` output to be high when the `STP` instruction was decoded.
 
 #### Validity of instructions
 
@@ -151,6 +151,10 @@ During the design proccess, it was observed that the stall cycle will not ever b
 ### PC Block
 
 - PC_next register is in the PC block because there is a need to get the PC block from the previous cycle when the hazard because of JUMPs occurred
+
+### Programs
+
+Programs developed for FPU and pipelining testing are located in the folder `programs`. To use one of the programs, firstly close ISSIE, then remove the file `program_memory.dgm` and copy the program that you want to test and rename the name of the file to `program_memory.dgm`. After reopening the ISSIE, the simulation should be running with the new program.
 
 ## Authors
 
