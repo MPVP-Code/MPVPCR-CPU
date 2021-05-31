@@ -132,6 +132,30 @@ The MOVS instruction is used to perform 32 bit operations using the OP2 block. T
 
 ![MOVS instruction sample program testing](images/movs-sample-program-testing.png)
 
+### Pipelining
+
+Pipelining on the Harvard architecture - advantage - it is easier to pipeline the CPU because there are no structural hazards caused by accessing the RAM memory. This is because Harvard architecture uses one memory for the program and the second memory for data. Pipelining is implemented by having 2 registers that store instruction that should be executed in the EXEC1 cycle - IR1 and instruction that should be executed in the EXEC2 cycle - IR2. Because there is a need to insert stalls between instructions to pipeline, two output flags IR1_VALID and IR2_VALID were added to show which of the two instructions is valid. The IRBlock has to be able to detect following hazards:
+
+- control hazards - occur when any jump instruction that uses a feature flag is fetched - this control hazard can be removed by the use of data forwarding
+- structural hazards - occur when two instructions try to access the same hardware at the same time (the bottleneck is the register file)
+- data dependency hazards - occur when the result of the instruction IR2 needs to be used by IR1
+
+#### Hazard detection logic
+
+Whole hazard detection logic was implementing by having combinational circuit hazard detector. This block does not store any state and by decoding given instructions, determines whether any hazard might occur. It has 1 outputs - `STALL`. This `STALL` output from the hazard detector always does not determine whether the stall cycle should be inserted or not because in the case the stall occurred in the previous cycle, both IR1 and IR2 will be the same and therefore the pipeline would be stalled forever. To overcome this problem, state circuits were added to the IRBlock that help to determine if the pipeline should be stalled. The output of the hazard detector is anded with the `IR2_valid` to check if both instructions that are inputted to the hazard detector are valid. The `IR1_valid` is not used to determine the `STALL` output because it is a function of STALL -> if STALL occurred, then `IR1_VALID` will be low. Then the output of the hazard detector is anded with `INITIAL_FETCH_OCCURRED` wire label to ensure, that the CPU will not be stalled in the first clock cycle. The third and gate to which the STALL output is connected is to prevent stalling the instruction forever because there cannot be two stalls following each other (idea: isn't this solved by `not(IR2_VALID)`? - no because in the cycle 1 the `not(IR2_VALID)` is high; however, the `STALL` could not happen). The last and gate prevents the `STALL` output to be high when the `STP` instruction was decoded.
+
+#### Validity of instructions
+
+During the design proccess, it was observed that the stall cycle will not ever be inserted between the E1 and E2. The IR1 is valid when the `STALL` output is low or the stop was decoded. Besides, the IR1 is not valid if the initial fetch did not occur.
+
+### PC Block
+
+- PC_next register is in the PC block because there is a need to get the PC block from the previous cycle when the hazard because of JUMPs occurred
+
+### Programs
+
+Programs developed for FPU and pipelining testing are located in the folder `programs`. To use one of the programs, firstly close ISSIE, then remove the file `program_memory.dgm` and copy the program that you want to test and rename the name of the file to `program_memory.dgm`. After reopening the ISSIE, the simulation should be running with the new program.
+
 ## Authors
 
 - Michal Palič ([michal.palic20@imperial.ac.uk](mailto:michal.palic20@imperial.ac.uk))
