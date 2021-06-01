@@ -1665,12 +1665,12 @@
               "AddressWidth": 12,
               "WordWidth": 16,
               "Data": {
-                "0": "15944",
-                "1": "12629",
+                "0": "0",
+                "1": "16608",
                 "2": "0",
-                "3": "8260",
+                "3": "16576",
                 "4": "0",
-                "5": "5120",
+                "5": "0",
                 "6": "0",
                 "7": "0",
                 "8": "0",
@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 30,
+      "Cursor": 9,
       "Radix": "Hex",
-      "LastClk": 75,
+      "LastClk": 53,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4413,9 +4413,17 @@
         "SHIFT8OUT",
         "OP2-VIEWER",
         "ALU_OP",
-        "IR2_OPCODE : datapath.I1.IR2_OPCODE[2:0]"
+        "IR2_OPCODE : datapath.I1.IR2_OPCODE[2:0]",
+        "A_LOWER_PART",
+        "B_LOWER_PART",
+        "RAM_ADDR",
+        "FPU_A",
+        "FPU_ADDER_OP1",
+        "FPU_ADDER_OP2",
+        "FPU_ADDER_OUT",
+        "FPU_B"
       ]
     },
-    "2021-05-31T13:22:56.359+01:00"
+    "2021-05-31T21:32:45.175+01:00"
   ]
 }

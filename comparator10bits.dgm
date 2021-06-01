@@ -56,10 +56,10 @@
           "Id": "2ad07f58-79ff-4258-86af-4eeb8188cf35",
           "Type": {
             "Custom": {
-              "Name": "compator5bits",
+              "Name": "comparator8bits",
               "InputLabels": [
-                ["A", 5],
-                ["B", 5]
+                ["A", 8],
+                ["B", 8]
               ],
               "OutputLabels": [
                 ["OUT", 1],
@@ -346,10 +346,10 @@
           "Id": "e21e3774-e31d-437f-b0ab-cf9b5363ee46",
           "Type": {
             "Custom": {
-              "Name": "compator5bits",
+              "Name": "comparator8bits",
               "InputLabels": [
-                ["A", 5],
-                ["B", 5]
+                ["A", 8],
+                ["B", 8]
               ],
               "OutputLabels": [
                 ["OUT", 1],
@@ -802,6 +802,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-05-31T10:29:27.878+01:00"
+    "2021-05-31T21:03:07.251+01:00"
   ]
 }

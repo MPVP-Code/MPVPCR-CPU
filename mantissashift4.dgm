@@ -126,7 +126,7 @@
         },
         {
           "Id": "45277177-4697-49bd-8822-2a5f66a3a901",
-          "Type": { "Input": 11 },
+          "Type": { "Input": 24 },
           "Label": "IN",
           "InputPorts": [],
           "OutputPorts": [
@@ -162,7 +162,7 @@
         },
         {
           "Id": "70030267-defd-49f1-9dda-c7c8a09337c6",
-          "Type": { "BusSelection": [7, 4] },
+          "Type": { "BusSelection": [20, 4] },
           "Label": "SEL1",
           "InputPorts": [
             {
@@ -218,7 +218,7 @@
         },
         {
           "Id": "be4c355b-9bbf-4dbc-9862-185dbe6bf3c8",
-          "Type": { "Output": 11 },
+          "Type": { "Output": 24 },
           "Label": "OUT",
           "InputPorts": [
             {
@@ -273,7 +273,7 @@
         },
         {
           "Id": "c618b5e4-a14e-4459-be06-b2cb80a35cb5",
-          "Type": { "BusSelection": [7, 0] },
+          "Type": { "BusSelection": [20, 0] },
           "Label": "SEL1",
           "InputPorts": [
             {
@@ -707,6 +707,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-05-31T10:29:27.718+01:00"
+    "2021-05-31T21:03:07.005+01:00"
   ]
 }
