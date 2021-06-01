@@ -22,7 +22,7 @@
         },
         {
           "Id": "2d34796b-69de-42bc-9713-ce99e41eff80",
-          "Type": { "Input": 11 },
+          "Type": { "Input": 24 },
           "Label": "OP1",
           "InputPorts": [],
           "OutputPorts": [
@@ -40,7 +40,7 @@
         },
         {
           "Id": "35da81bf-ffcf-4e0d-9039-fb6dbd550fee",
-          "Type": { "Constant1": [11, "0", "0"] },
+          "Type": { "Constant1": [24, "0", "0"] },
           "Label": "C5",
           "InputPorts": [],
           "OutputPorts": [
@@ -113,7 +113,7 @@
         },
         {
           "Id": "83c1728f-c2ea-4ac0-b37d-393e893482ac",
-          "Type": { "Input": 11 },
+          "Type": { "Input": 24 },
           "Label": "OP2",
           "InputPorts": [],
           "OutputPorts": [
@@ -149,7 +149,7 @@
         },
         {
           "Id": "c187d65f-3bad-4710-a721-458d34b38984",
-          "Type": { "Output": 11 },
+          "Type": { "Output": 24 },
           "Label": "SUM",
           "InputPorts": [
             {
@@ -167,7 +167,7 @@
         },
         {
           "Id": "c2131098-c3a3-41d5-96f5-d879ba00b45a",
-          "Type": { "NbitsAdder": 11 },
+          "Type": { "NbitsAdder": 24 },
           "Label": "A1",
           "InputPorts": [
             {
@@ -228,7 +228,7 @@
         },
         {
           "Id": "e8674dc5-f8b8-4bc8-bfc0-399c7acba105",
-          "Type": { "BusSelection": [10, 1] },
+          "Type": { "BusSelection": [23, 1] },
           "Label": "SEL8",
           "InputPorts": [
             {
@@ -568,6 +568,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-05-31T21:03:06.961+01:00"
+    "2021-06-01T13:45:29.997+01:00"
   ]
 }

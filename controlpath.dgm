@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 9,
+      "Cursor": 12,
       "Radix": "Hex",
-      "LastClk": 53,
+      "LastClk": 31,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4421,9 +4421,11 @@
         "FPU_ADDER_OP1",
         "FPU_ADDER_OP2",
         "FPU_ADDER_OUT",
-        "FPU_B"
+        "FPU_B",
+        "A_DENORMAL",
+        "B_DENORMAL"
       ]
     },
-    "2021-05-31T21:32:45.175+01:00"
+    "2021-06-01T13:50:58.795+01:00"
   ]
 }

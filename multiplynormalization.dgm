@@ -159,7 +159,7 @@
         },
         {
           "Id": "1cb2169b-894d-4d34-91a5-25a47aadaeef",
-          "Type": { "BusSelection": [10, 0] },
+          "Type": { "BusSelection": [23, 0] },
           "Label": "SEL4",
           "InputPorts": [
             {
@@ -227,7 +227,7 @@
         },
         {
           "Id": "37d4186a-f9d9-4534-ba01-94eeeb56cad0",
-          "Type": { "Input": 16 },
+          "Type": { "Input": 32 },
           "Label": "B",
           "InputPorts": [],
           "OutputPorts": [
@@ -245,7 +245,7 @@
         },
         {
           "Id": "38b22255-ab3a-4e92-89c2-c9b96cffe0a2",
-          "Type": { "Output": 11 },
+          "Type": { "Output": 24 },
           "Label": "OP1",
           "InputPorts": [
             {
@@ -263,7 +263,7 @@
         },
         {
           "Id": "39e7c649-8c74-49b0-b80f-170c7b6e4d8d",
-          "Type": { "Output": 11 },
+          "Type": { "Output": 24 },
           "Label": "OP2",
           "InputPorts": [
             {
@@ -374,7 +374,7 @@
         },
         {
           "Id": "89ced6a7-b971-413e-8ba9-83129b77452c",
-          "Type": { "BusSelection": [10, 0] },
+          "Type": { "BusSelection": [23, 0] },
           "Label": "SEL2",
           "InputPorts": [
             {
@@ -430,7 +430,7 @@
         },
         {
           "Id": "931214c0-61c6-48ff-97d9-ab99ba1862ac",
-          "Type": { "BusSelection": [10, 0] },
+          "Type": { "BusSelection": [23, 0] },
           "Label": "SEL3",
           "InputPorts": [
             {
@@ -558,7 +558,7 @@
         },
         {
           "Id": "cb2f0426-815b-4926-8df5-f9a06cb8e0b0",
-          "Type": { "BusSelection": [10, 0] },
+          "Type": { "BusSelection": [23, 0] },
           "Label": "SEL1",
           "InputPorts": [
             {
@@ -658,7 +658,7 @@
         },
         {
           "Id": "ed924028-4458-4e6e-abf4-5a75ab5186b4",
-          "Type": { "Input": 16 },
+          "Type": { "Input": 32 },
           "Label": "A",
           "InputPorts": [],
           "OutputPorts": [
@@ -1328,6 +1328,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-05-31T21:03:06.953+01:00"
+    "2021-06-01T13:45:29.989+01:00"
   ]
 }
