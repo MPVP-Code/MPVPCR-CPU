@@ -357,31 +357,6 @@
           "W": 60
         },
         {
-          "Id": "11833058-f30a-41a0-a116-533b9ca94539",
-          "Type": "IOLabel",
-          "Label": "DIN",
-          "InputPorts": [
-            {
-              "Id": "38a16525-bde6-456e-b2ca-a020d010e5d2",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "11833058-f30a-41a0-a116-533b9ca94539"
-            }
-          ],
-          "OutputPorts": [
-            {
-              "Id": "ccc13dce-58e8-46e5-b181-ec908cdcc20d",
-              "PortNumber": 0,
-              "PortType": "Output",
-              "HostId": "11833058-f30a-41a0-a116-533b9ca94539"
-            }
-          ],
-          "X": 1472,
-          "Y": 279,
-          "H": 30,
-          "W": 60
-        },
-        {
           "Id": "13cbf608-c72b-4d65-9fe6-34779a7f3cb3",
           "Type": "IOLabel",
           "Label": "STATUSREAD",
@@ -565,31 +540,6 @@
           ],
           "X": 496,
           "Y": 592,
-          "H": 30,
-          "W": 60
-        },
-        {
-          "Id": "25f240cb-b845-4715-8aea-645e4621a650",
-          "Type": "IOLabel",
-          "Label": "RAMADDRESS",
-          "InputPorts": [
-            {
-              "Id": "bf8dbdce-47a4-4ee9-a895-97795fd3d874",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "25f240cb-b845-4715-8aea-645e4621a650"
-            }
-          ],
-          "OutputPorts": [
-            {
-              "Id": "4b584dd2-f0f6-431f-8297-d3ec09c74d00",
-              "PortNumber": 0,
-              "PortType": "Output",
-              "HostId": "25f240cb-b845-4715-8aea-645e4621a650"
-            }
-          ],
-          "X": 1467,
-          "Y": 41,
           "H": 30,
           "W": 60
         },
@@ -957,31 +907,6 @@
           "W": 60
         },
         {
-          "Id": "46df5d05-1a7c-4616-8ac7-eea7bfe1d4f6",
-          "Type": "IOLabel",
-          "Label": "WEN",
-          "InputPorts": [
-            {
-              "Id": "93039a95-74f2-4f20-b5ca-b41eaf90ed1c",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "46df5d05-1a7c-4616-8ac7-eea7bfe1d4f6"
-            }
-          ],
-          "OutputPorts": [
-            {
-              "Id": "6b9f9d4d-b152-4fe5-8dee-e428b0a25e91",
-              "PortNumber": 0,
-              "PortType": "Output",
-              "HostId": "46df5d05-1a7c-4616-8ac7-eea7bfe1d4f6"
-            }
-          ],
-          "X": 1479,
-          "Y": 531,
-          "H": 30,
-          "W": 60
-        },
-        {
           "Id": "49813b79-60c9-4065-b021-0a380bccd59c",
           "Type": "IOLabel",
           "Label": "MODE",
@@ -1223,24 +1148,6 @@
           ],
           "X": 1734,
           "Y": 1475,
-          "H": 30,
-          "W": 60
-        },
-        {
-          "Id": "53b5a56a-44c0-48bb-a873-1a19c97986db",
-          "Type": { "Output": 1 },
-          "Label": "WENOut",
-          "InputPorts": [
-            {
-              "Id": "2a7e8e25-623f-4c72-af3a-31b6a22dec4d",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "53b5a56a-44c0-48bb-a873-1a19c97986db"
-            }
-          ],
-          "OutputPorts": [],
-          "X": 1590,
-          "Y": 531,
           "H": 30,
           "W": 60
         },
@@ -1998,24 +1905,6 @@
           "W": 60
         },
         {
-          "Id": "98f9e3c0-b5b1-4395-9661-4aad79c0399b",
-          "Type": { "Output": 12 },
-          "Label": "RAMAddOut",
-          "InputPorts": [
-            {
-              "Id": "ef05c761-8c6a-40a9-9dfa-8c47fa5c1c11",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "98f9e3c0-b5b1-4395-9661-4aad79c0399b"
-            }
-          ],
-          "OutputPorts": [],
-          "X": 1590,
-          "Y": 41,
-          "H": 30,
-          "W": 60
-        },
-        {
           "Id": "9cf8f698-a557-416f-8ec8-b0b925ae3c07",
           "Type": "IOLabel",
           "Label": "RAMADDRESS",
@@ -2533,24 +2422,6 @@
           "W": 60
         },
         {
-          "Id": "e38f9059-e4d1-4a4f-9f17-144c9b527265",
-          "Type": { "Output": 16 },
-          "Label": "RAMDinOut",
-          "InputPorts": [
-            {
-              "Id": "63a078b5-f37c-4138-8833-b655d87419f1",
-              "PortNumber": 0,
-              "PortType": "Input",
-              "HostId": "e38f9059-e4d1-4a4f-9f17-144c9b527265"
-            }
-          ],
-          "OutputPorts": [],
-          "X": 1590,
-          "Y": 280,
-          "H": 30,
-          "W": 60
-        },
-        {
           "Id": "e99bb0ea-a4b2-4f37-afc6-6d7b5ede40b9",
           "Type": "IOLabel",
           "Label": "WEN",
@@ -2636,6 +2507,24 @@
           "Y": 832,
           "H": 30,
           "W": 60
+        },
+        {
+          "Id": "f7910f35-173d-4a33-9419-9ff40b0d337f",
+          "Type": { "Viewer": 8 },
+          "Label": "RXBYTE",
+          "InputPorts": [
+            {
+              "Id": "9bd0e152-540e-4a3b-8d63-87879f9905e6",
+              "PortNumber": 0,
+              "PortType": "Input",
+              "HostId": "f7910f35-173d-4a33-9419-9ff40b0d337f"
+            }
+          ],
+          "OutputPorts": [],
+          "X": 1034,
+          "Y": 1650,
+          "H": 30,
+          "W": 30
         },
         {
           "Id": "fe2adddb-f77b-422e-acd3-735845e043e9",
@@ -2849,56 +2738,6 @@
             [898, 1213],
             [898, 1213],
             [918, 1213]
-          ]
-        },
-        {
-          "Id": "0d659b9b-bdb9-47c9-9435-0524a1ca6b84",
-          "Source": {
-            "Id": "6b9f9d4d-b152-4fe5-8dee-e428b0a25e91",
-            "PortNumber": null,
-            "PortType": "Output",
-            "HostId": "46df5d05-1a7c-4616-8ac7-eea7bfe1d4f6"
-          },
-          "Target": {
-            "Id": "2a7e8e25-623f-4c72-af3a-31b6a22dec4d",
-            "PortNumber": null,
-            "PortType": "Input",
-            "HostId": "53b5a56a-44c0-48bb-a873-1a19c97986db"
-          },
-          "Vertices": [
-            [1539, 546],
-            [1559, 546],
-            [1559, 546],
-            [1564.5, 546],
-            [1564.5, 546],
-            [1570, 546],
-            [1570, 546],
-            [1590, 546]
-          ]
-        },
-        {
-          "Id": "0d819273-fce1-4363-906b-70b54583e9b0",
-          "Source": {
-            "Id": "4b584dd2-f0f6-431f-8297-d3ec09c74d00",
-            "PortNumber": null,
-            "PortType": "Output",
-            "HostId": "25f240cb-b845-4715-8aea-645e4621a650"
-          },
-          "Target": {
-            "Id": "ef05c761-8c6a-40a9-9dfa-8c47fa5c1c11",
-            "PortNumber": null,
-            "PortType": "Input",
-            "HostId": "98f9e3c0-b5b1-4395-9661-4aad79c0399b"
-          },
-          "Vertices": [
-            [1527, 56],
-            [1547, 56],
-            [1547, 56],
-            [1558.5, 56],
-            [1558.5, 56],
-            [1570, 56],
-            [1570, 56],
-            [1590, 56]
           ]
         },
         {
@@ -3227,31 +3066,6 @@
           ]
         },
         {
-          "Id": "4233b421-5cb7-438a-8bc8-da69e845b749",
-          "Source": {
-            "Id": "ccc13dce-58e8-46e5-b181-ec908cdcc20d",
-            "PortNumber": null,
-            "PortType": "Output",
-            "HostId": "11833058-f30a-41a0-a116-533b9ca94539"
-          },
-          "Target": {
-            "Id": "63a078b5-f37c-4138-8833-b655d87419f1",
-            "PortNumber": null,
-            "PortType": "Input",
-            "HostId": "e38f9059-e4d1-4a4f-9f17-144c9b527265"
-          },
-          "Vertices": [
-            [1532, 294],
-            [1552, 294],
-            [1552, 294],
-            [1561, 294],
-            [1561, 295],
-            [1570, 295],
-            [1570, 295],
-            [1590, 295]
-          ]
-        },
-        {
           "Id": "42ad04ec-fa81-410f-9980-567428e4aa9e",
           "Source": {
             "Id": "86c0f22b-6354-4b6a-a7ec-5af5fc6002c5",
@@ -3274,6 +3088,31 @@
             [1213.4117647058822, 568.2941176470589],
             [1213.4117647058822, 568.2941176470589],
             [1233.4117647058822, 568.2941176470589]
+          ]
+        },
+        {
+          "Id": "4b9dd8ca-f677-4bf2-9200-f92c547b2f6e",
+          "Source": {
+            "Id": "b909b304-ed02-40e5-987c-bf788f60fd01",
+            "PortNumber": null,
+            "PortType": "Output",
+            "HostId": "4c6d1c7c-6303-451e-9d97-067d93afcc1a"
+          },
+          "Target": {
+            "Id": "9bd0e152-540e-4a3b-8d63-87879f9905e6",
+            "PortNumber": null,
+            "PortType": "Input",
+            "HostId": "f7910f35-173d-4a33-9419-9ff40b0d337f"
+          },
+          "Vertices": [
+            [976, 1612],
+            [996, 1612],
+            [996, 1612],
+            [1005.3200073242188, 1612],
+            [1005.3200073242188, 1665],
+            [1014.6400146484375, 1665],
+            [1014.6400146484375, 1665],
+            [1034.6400146484375, 1665]
           ]
         },
         {
@@ -4760,6 +4599,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-01T13:16:00.427+01:00"
+    "2021-06-02T10:47:15.828+01:00"
   ]
 }
