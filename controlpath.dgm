@@ -1665,10 +1665,10 @@
               "AddressWidth": 12,
               "WordWidth": 16,
               "Data": {
-                "0": "18176",
-                "1": "17920",
+                "0": "0",
+                "1": "16608",
                 "2": "0",
-                "3": "0",
+                "3": "16576",
                 "4": "0",
                 "5": "0",
                 "6": "0",
@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 3,
+      "Cursor": 36,
       "Radix": "Hex",
-      "LastClk": 20,
+      "LastClk": 53,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4394,9 +4394,19 @@
         "OP1_MANTISA_MULTIPLY",
         "OP2_MANTISA_MULTIPLY",
         "A_MANTISA_MUL",
-        "B_MANTISA_MUL"
+        "B_MANTISA_MUL",
+        "OP1_MANTISA_ADDER",
+        "OP2_MANTISA_ADDER",
+        "A_SAVED",
+        "B_SAVED",
+        "FPU_A",
+        "FPU_B",
+        "IR1 : irblock.I1.IR1[15:0]",
+        "IR2 : irblock.I1.IR2[15:0]",
+        "IR1_VALID : irblock.I1.IR1_VALID",
+        "IR2_VALID : irblock.I1.IR2_VALID"
       ]
     },
-    "2021-06-02T10:58:06.378+01:00"
+    "2021-06-02T12:00:28.079+01:00"
   ]
 }

@@ -1068,7 +1068,7 @@
         {
           "Id": "30f28d14-6834-4d4b-bbf7-eaecefd5a319",
           "Type": { "Viewer": 24 },
-          "Label": "OP1_MANTISA",
+          "Label": "OP1_MANTISA_ADDER",
           "InputPorts": [
             {
               "Id": "152041a3-b807-4779-a2a5-b9bb2fefaa8b",
@@ -1785,7 +1785,7 @@
         {
           "Id": "5fcfaa71-244c-4ca8-bb4b-d7f7d2314180",
           "Type": { "Viewer": 24 },
-          "Label": "OP2_MANTISA",
+          "Label": "OP2_MANTISA_ADDER",
           "InputPorts": [
             {
               "Id": "9c680036-332e-4547-9de1-d6ad2ad4355a",
@@ -9061,6 +9061,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-02T09:36:49.724+01:00"
+    "2021-06-02T11:18:20.434+01:00"
   ]
 }
