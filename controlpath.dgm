@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 18,
+      "Cursor": 3,
       "Radix": "Hex",
-      "LastClk": 31,
+      "LastClk": 20,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4390,9 +4390,13 @@
         "HALF_PRECISION_EXPONENT_DENORM",
         "HALF_PRECISION_MANTISA_DENORM",
         "MULTIPLY_DENORMALIZATION_16_BIT",
-        "HALF_PRECISION_32_BIT"
+        "HALF_PRECISION_32_BIT",
+        "OP1_MANTISA_MULTIPLY",
+        "OP2_MANTISA_MULTIPLY",
+        "A_MANTISA_MUL",
+        "B_MANTISA_MUL"
       ]
     },
-    "2021-06-02T10:08:24.425+01:00"
+    "2021-06-02T10:58:06.378+01:00"
   ]
 }
