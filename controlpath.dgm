@@ -1303,8 +1303,8 @@
                 "11": "0",
                 "12": "0",
                 "13": "0",
-                "14": "0",
-                "15": "65535",
+                "14": "2",
+                "15": "0",
                 "16": "0",
                 "17": "0",
                 "18": "0",
@@ -1327,6 +1327,7 @@
                 "257": "0",
                 "258": "0",
                 "259": "0",
+                "4080": "5",
                 "4082": "4369",
                 "4083": "4660",
                 "4084": "0",
@@ -1727,7 +1728,7 @@
         {
           "Id": "df401f3e-f2c3-6a2b-919d-7382393f7d55",
           "Type": "IOLabel",
-          "Label": "DATA_OUT",
+          "Label": "UART_DOUT",
           "InputPorts": [
             {
               "Id": "b0e3b75d-1493-e475-3e5b-ff1a51abd736",
@@ -1744,7 +1745,7 @@
               "HostId": "df401f3e-f2c3-6a2b-919d-7382393f7d55"
             }
           ],
-          "X": 237,
+          "X": 238,
           "Y": 915,
           "H": 30,
           "W": 60
@@ -3066,11 +3067,11 @@
             "HostId": "c8ac6815-14ce-4791-b7fa-936defaf5e6b"
           },
           "Vertices": [
-            [297, 930],
-            [317, 930],
-            [317, 930],
-            [329.5, 930],
-            [329.5, 930],
+            [298, 930],
+            [318, 930],
+            [318, 930],
+            [330, 930],
+            [330, 930],
             [342, 930],
             [342, 930],
             [362, 930]
@@ -3406,29 +3407,25 @@
     {
       "ClkWidth": 1,
       "Cursor": 0,
-      "Radix": "Hex",
-      "LastClk": 9,
+      "Radix": "Dec",
+      "LastClk": 451,
       "DisplayedPortIds": [
         "R0TEST",
         "R1TEST",
         "R2TEST",
         "R3TEST",
         "RAM_ADDR",
-        "LDST_RAMDOUT",
-        "LDSTN",
-        "RAMDOUT_DATAPATH",
-        "LDSTRAMMUX",
-        "LDSTRM",
-        "LDST_RMN",
-        "RM",
-        "AD2",
-        "IR1_VALID : irblock.I1.IR1_VALID",
-        "IR1 : irblock.I1.IR1[15:0]",
-        "IR2 : irblock.I1.IR2[15:0]",
-        "IR2_VALID : irblock.I1.IR2_VALID",
-        "STALL : irblock.I1.STALL"
+        "RX",
+        "TX",
+        "RXBYTE",
+        "TXWRITE",
+        "RXINT : uart.I1.RXINTERRUPT",
+        "WENRAM : datapath.I1.WENRAM",
+        "WEN3",
+        "RXREAD",
+        "EDGEMODE"
       ]
     },
-    "2021-06-02T22:43:52.215+01:00"
+    "2021-06-03T12:27:42.418+01:00"
   ]
 }
