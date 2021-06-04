@@ -2616,7 +2616,7 @@
         {
           "Id": "932e7c50-37cd-4d72-a4e1-3fc34b07c140",
           "Type": { "Viewer": 23 },
-          "Label": "MANTISA_RESULT",
+          "Label": "MANTISA_RESULT_FPU_ADDER",
           "InputPorts": [
             {
               "Id": "9d9a641d-b316-4404-98e6-654fe8d7acc7",
@@ -4479,6 +4479,24 @@
           "Y": 521,
           "H": 30,
           "W": 60
+        },
+        {
+          "Id": "f13ebc29-bda3-41ad-a2b0-98d8b0552fa0",
+          "Type": { "Viewer": 5 },
+          "Label": "EXPONENT",
+          "InputPorts": [
+            {
+              "Id": "7c7dfb2e-61ab-413e-82bb-bc494219db9f",
+              "PortNumber": 0,
+              "PortType": "Input",
+              "HostId": "f13ebc29-bda3-41ad-a2b0-98d8b0552fa0"
+            }
+          ],
+          "OutputPorts": [],
+          "X": 2192,
+          "Y": 1680,
+          "H": 30,
+          "W": 30
         },
         {
           "Id": "f43c183a-25f0-4c60-a4a0-893169cc67d2",
@@ -8703,6 +8721,31 @@
           ]
         },
         {
+          "Id": "e90512c3-4e88-425c-8c81-f197460c6415",
+          "Source": {
+            "Id": "2b823071-0ccb-4916-872a-5d993323bbbe",
+            "PortNumber": null,
+            "PortType": "Output",
+            "HostId": "e10bd632-5e81-4813-bbe7-f3b96e0aebc8"
+          },
+          "Target": {
+            "Id": "7c7dfb2e-61ab-413e-82bb-bc494219db9f",
+            "PortNumber": null,
+            "PortType": "Input",
+            "HostId": "f13ebc29-bda3-41ad-a2b0-98d8b0552fa0"
+          },
+          "Vertices": [
+            [2052, 1617],
+            [2072, 1617],
+            [2072, 1617],
+            [2122.1470588235297, 1617],
+            [2122.1470588235297, 1695],
+            [2172.294117647059, 1695],
+            [2172.294117647059, 1695],
+            [2192.294117647059, 1695]
+          ]
+        },
+        {
           "Id": "e9363d82-68eb-4fb4-b42a-7ec577c12c63",
           "Source": {
             "Id": "3efb10bb-a55c-44c1-a2dd-6679cb7cbc9c",
@@ -9061,6 +9104,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-02T11:18:20.434+01:00"
+    "2021-06-04T10:10:55.765+01:00"
   ]
 }

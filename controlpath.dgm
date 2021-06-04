@@ -1665,12 +1665,12 @@
               "AddressWidth": 12,
               "WordWidth": 16,
               "Data": {
-                "0": "0",
-                "1": "16608",
+                "0": "15944",
+                "1": "12629",
                 "2": "0",
-                "3": "16576",
+                "3": "8256",
                 "4": "0",
-                "5": "0",
+                "5": "5120",
                 "6": "0",
                 "7": "0",
                 "8": "0",
@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 36,
+      "Cursor": 27,
       "Radix": "Hex",
-      "LastClk": 53,
+      "LastClk": 42,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4393,20 +4393,22 @@
         "HALF_PRECISION_32_BIT",
         "OP1_MANTISA_MULTIPLY",
         "OP2_MANTISA_MULTIPLY",
-        "A_MANTISA_MUL",
-        "B_MANTISA_MUL",
         "OP1_MANTISA_ADDER",
         "OP2_MANTISA_ADDER",
-        "A_SAVED",
-        "B_SAVED",
-        "FPU_A",
-        "FPU_B",
+        "A_IN_MULTIPLIER",
+        "B_IN_MULTIPLIER",
+        "A_MANTISA_MUL",
+        "B_MANTISA_MUL",
         "IR1 : irblock.I1.IR1[15:0]",
         "IR2 : irblock.I1.IR2[15:0]",
         "IR1_VALID : irblock.I1.IR1_VALID",
-        "IR2_VALID : irblock.I1.IR2_VALID"
+        "IR2_VALID : irblock.I1.IR2_VALID",
+        "STALL : irblock.I1.STALL",
+        "EXEC1_VIEW_MULTIPLIER",
+        "FPU_ADDER_OUT",
+        "MANTISA_RESULT_FPU_ADDER"
       ]
     },
-    "2021-06-02T12:00:28.079+01:00"
+    "2021-06-04T10:12:50.195+01:00"
   ]
 }
