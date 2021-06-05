@@ -1665,7 +1665,7 @@
               "AddressWidth": 12,
               "WordWidth": 16,
               "Data": {
-                "0": "15944",
+                "0": "14920",
                 "1": "12629",
                 "2": "0",
                 "3": "8256",
@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 27,
+      "Cursor": 33,
       "Radix": "Hex",
-      "LastClk": 42,
+      "LastClk": 86,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4406,9 +4406,11 @@
         "STALL : irblock.I1.STALL",
         "EXEC1_VIEW_MULTIPLIER",
         "FPU_ADDER_OUT",
-        "MANTISA_RESULT_FPU_ADDER"
+        "MANTISA_RESULT_FPU_ADDER",
+        "A_VIEW",
+        "B_MERGE"
       ]
     },
-    "2021-06-04T10:12:50.195+01:00"
+    "2021-06-05T11:23:27.655+01:00"
   ]
 }
