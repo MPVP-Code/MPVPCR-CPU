@@ -203,7 +203,7 @@
         {
           "Id": "3340a2b9-caef-40de-bf88-4551c8a5a5cd",
           "Type": "IOLabel",
-          "Label": "ParityError",
+          "Label": "Error",
           "InputPorts": [
             {
               "Id": "06b02b90-1b31-4320-9d8d-419d073c1ea7",
@@ -2155,6 +2155,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-05T10:46:34.240+01:00"
+    "2021-06-06T16:51:41.807+01:00"
   ]
 }

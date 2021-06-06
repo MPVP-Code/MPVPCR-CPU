@@ -1113,8 +1113,8 @@
         },
         {
           "Id": "58df7f23-032a-44af-a088-3d039c017069",
-          "Type": { "Input": 16 },
-          "Label": "RAMADDRESS(15:0)",
+          "Type": { "Input": 12 },
+          "Label": "RAMADDRESS",
           "InputPorts": [],
           "OutputPorts": [
             {
@@ -1203,7 +1203,7 @@
             "Custom": {
               "Name": "uartdecode",
               "InputLabels": [
-                ["RAMAddress", 16],
+                ["RAMAddress", 12],
                 ["WEN", 1]
               ],
               "OutputLabels": [
@@ -1710,7 +1710,7 @@
         },
         {
           "Id": "98f9e3c0-b5b1-4395-9661-4aad79c0399b",
-          "Type": { "Output": 16 },
+          "Type": { "Output": 12 },
           "Label": "RAMAddOut",
           "InputPorts": [
             {
@@ -4242,6 +4242,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-05T10:46:34.415+01:00"
+    "2021-06-06T16:51:42.014+01:00"
   ]
 }
