@@ -4375,9 +4375,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 33,
+      "Cursor": 0,
       "Radix": "Hex",
-      "LastClk": 86,
+      "LastClk": 9,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -4411,6 +4411,6 @@
         "B_MERGE"
       ]
     },
-    "2021-06-05T11:23:27.655+01:00"
+    "2021-06-06T15:27:28.578+01:00"
   ]
 }
