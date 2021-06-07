@@ -3457,9 +3457,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 52,
+      "Cursor": 0,
       "Radix": "Hex",
-      "LastClk": 97,
+      "LastClk": 9,
       "DisplayedPortIds": [
         "FETCH : statemachine.I1.FETCH",
         "EXEC1 : statemachine.I1.EXEC1",
@@ -3479,6 +3479,6 @@
         "WENRAM : datapath.I1.WENRAM"
       ]
     },
-    "2021-06-06T16:51:42.327+01:00"
+    "2021-06-07T12:51:05.991+01:00"
   ]
 }
