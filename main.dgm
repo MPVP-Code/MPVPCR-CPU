@@ -1949,9 +1949,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 125,
+      "Cursor": 3,
       "Radix": "Hex",
-      "LastClk": 163,
+      "LastClk": 42,
       "DisplayedPortIds": [
         "SELIN_VIEWER",
         "SELOUTVIEWER",
@@ -1979,9 +1979,13 @@
         "B_32_BIT_FPU_ADDER",
         "MUX8_OUT",
         "LDST_RAMDOUT",
-        "LOAD_STORE_OUT"
+        "LOAD_STORE_OUT",
+        "DIN3-VIEWER",
+        "DIN_FIRST_MUX",
+        "AD2",
+        "OP2"
       ]
     },
-    "2021-06-07T17:12:58.286+01:00"
+    "2021-06-07T20:05:23.280+01:00"
   ]
 }
