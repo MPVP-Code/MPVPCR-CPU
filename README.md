@@ -124,6 +124,12 @@ These two instructions were implemented as a part of the challenge. The `JLS` in
 - 6 bits remaining - will be needed for the 32 bit operations and rounding method selection
 - M \[2 bits\] = address of the second operand register
 
+### FPU 16 bit multiplication
+
+Because the multiplication is implemented on single-precision the lower bits of the mantissa during the shift that occurs during the multiplication could not be thrown away. However, the problem is that results from multiplication are small and therefore it is difficult to perform addition and subtraction with them because the exponent difference gets too big and therefore significant precision loss occurs. This problem was solved by zeroing the 13 least significant bits during the half precision multiplication.
+
+- current problem: addition of last two numbers and obtain half precission mantissa from the addition
+
 ### MOVS instruction
 
 The MOVS instruction is used to perform 32 bit operations using the OP2 block. The example program that uses the MOVS instruction can be seen in the following figure. The program firstly uses immediate instructions that use values to the registers. Then it uses newly developed MOVS instruction to perform multi-word LSR shifts. Firstly, MOVS instruction is called on the value of the R2 register which is considered as a upper-word for the SHIFT. Then the instruction MOV with bit S=0 is called. This instruction uses the output of the flip flops that are in each shift block. These flip flops store values that would be otherwise discarted by the previous operation.
