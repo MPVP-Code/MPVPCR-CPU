@@ -2157,9 +2157,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 0,
+      "Cursor": 4,
       "Radix": "Hex",
-      "LastClk": 42,
+      "LastClk": 20,
       "DisplayedPortIds": [
         "R0TEST!0",
         "R1TEST!0",
@@ -2169,6 +2169,8 @@
         "R1TEST!1",
         "R2TEST!1",
         "R3TEST!1",
+        "IR1_VALID_VIEWER!0",
+        "IR2_VALID_VIEWER!0",
         "PC_NEXT0 : cpu.I0.PCNEXT[11:0]",
         "PC_NEXT1 : cpu.I1.PCNEXT[11:0]",
         "TAKE_JUMP!0",
@@ -2179,8 +2181,6 @@
         "N_VIEWER!1",
         "IR1_VIEWER!0",
         "IR2_VIEWER!0",
-        "IR1_VALID_VIEWER!0",
-        "IR2_VALID_VIEWER!0",
         "IR1_VIEWER!1",
         "IR2_VIEWER!1",
         "RAM_ADDR0 : cpu.I0.RAM_ADDR[11:0]",
@@ -2214,6 +2214,6 @@
         "WEN3!1"
       ]
     },
-    "2021-06-10T13:14:03.837+01:00"
+    "2021-06-10T13:31:08.454+01:00"
   ]
 }
