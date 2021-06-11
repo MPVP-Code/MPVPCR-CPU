@@ -23,7 +23,7 @@
         {
           "Id": "3108ea3d-67b5-4a5a-9dc9-f7104151b359",
           "Type": { "Input": 24 },
-          "Label": "OP2",
+          "Label": "MULTIPLIER",
           "InputPorts": [],
           "OutputPorts": [
             {
@@ -59,7 +59,7 @@
         {
           "Id": "522a80cc-71ed-4631-ae8f-97527d86441c",
           "Type": { "Input": 24 },
-          "Label": "MULTIPLIER",
+          "Label": "OP2",
           "InputPorts": [],
           "OutputPorts": [
             {
@@ -384,6 +384,6 @@
       "LastClk": 9,
       "DisplayedPortIds": []
     },
-    "2021-06-10T11:19:07.063+01:00"
+    "2021-06-11T10:23:16.473+01:00"
   ]
 }
