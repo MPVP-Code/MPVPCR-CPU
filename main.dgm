@@ -2157,9 +2157,9 @@
     ],
     {
       "ClkWidth": 1,
-      "Cursor": 35,
+      "Cursor": 0,
       "Radix": "Hex",
-      "LastClk": 53,
+      "LastClk": 9,
       "DisplayedPortIds": [
         "R0TEST!0",
         "R1TEST!0",
@@ -2186,9 +2186,41 @@
         "FPU_OUT!1",
         "WEN_FPU!1",
         "FMUL_FINISHED_VIEWER!0",
-        "FMUL_FINISHED_VIEWER!1"
+        "FMUL_FINISHED_VIEWER!1",
+        "DATA_IN0 : cpu.I0.DATA_IN[15:0]",
+        "DATA_IN1 : cpu.I1.DATA_IN[15:0]",
+        "WENRAM0 : cpu.I0.WENRAM",
+        "WENRAM1 : cpu.I1.WENRAM",
+        "FPU_MULTIPLIER_OUT!0",
+        "FPU_MULTIPLIER_OUT!1",
+        "FPU_32_BIT_MUL_PIPELINED!0",
+        "FPU_32_BIT_MUL_PIPELINED!1",
+        "A_32_BIT_MUL!0",
+        "A_32_BIT_MUL!1",
+        "B_32_MUL!0",
+        "B_32_MUL!1",
+        "HALF_PRECISION_32_BIT!0",
+        "HALF_PRECISION_32_BIT!1",
+        "MULTIPLIER_OUT!0",
+        "MULTIPLIER_OUT!1",
+        "ININT!1",
+        "INT2!1",
+        "INT2ADD!0",
+        "NEWINT!0",
+        "NINT!0",
+        "ININT!0",
+        "INT2!0",
+        "INT2ADD!1",
+        "NEWINT!1",
+        "NINT!1",
+        "RAMADDRMUX!0",
+        "RAMADDRMUX!1",
+        "LDSTRM!0",
+        "LDSTRM!1",
+        "LDST_RMN!0",
+        "LDST_RMN!1"
       ]
     },
-    "2021-06-11T21:43:08.067+01:00"
+    "2021-06-12T14:09:36.593+01:00"
   ]
 }
